@@ -5,9 +5,12 @@
 	xmlns:h="http://java.sun.com/jsf/html">
 
 	<h:head>
+		<title>Cadastrar Gênero</title>
 	</h:head>
-
 	<h:body>
-		<h1>Board Game Society</h1>	
+		<h:form>
+			<h:inputText label="Gênero" value="#{generoMB.genero.descricao}" required="true"/>
+			<h:commandButton action="#{generoMB.salvar(generoMB.genero)}" value="Salvar" />
+		</h:form>
 	</h:body>
 </html>
